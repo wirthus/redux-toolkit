@@ -58,7 +58,7 @@ export type QueryActionCreatorResult<
   arg: QueryArgFrom<D>
   requestId: string
   subscriptionOptions: SubscriptionOptions | undefined
-  abort(): void
+  abort(reason?: string): void
   unwrap(): Promise<ResultTypeFrom<D>>
   unsubscribe(): void
   refetch(): QueryActionCreatorResult<D>
